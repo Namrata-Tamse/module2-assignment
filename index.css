@@ -1,0 +1,60 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Section title styles */
+h2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f00; /* Choose your section title background color */
+    padding: 5px;
+    margin: 0;
+}
+
+/* Responsive layout using media queries */
+@media screen and (max-width: 767px) {
+    /* Mobile view */
+    section {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Tablet view */
+    section {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Desktop view */
+    section {
+        width: 33.33%;
+        float: left;
+    }
+}
